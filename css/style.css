@@ -1,0 +1,970 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+body {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/*listes des proprietes css generales a l'ensemble de la page*/
+
+.bold {
+    font-weight: bold;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.flexaround {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flexcolumncenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flexbetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexpopu {
+    display: flex;
+}
+
+.flexcolumnaround {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexcolumnbetween {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.bordernone {
+    border: none;
+}
+
+.displaynone {
+    display: none;
+}
+
+/*Fin de l'ensemble des proprietes css applicables a l'ensemble de la page*/
+/*Ensemble de style apliquer au header*/
+.iconsize {
+    border-radius: 10px 0 0 10px;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.loupe {
+    display: none;
+}
+
+.textcolor {
+    /* la couleur du bouton de recherche */
+    color: white;
+}
+
+.bordernone {
+    /*cette classe nous a permis de suprrimer le border de l'input*/
+    border: none;
+}
+
+.colorgray {
+    color: #f2f2f2;
+}
+
+.colorblue {
+    color: #0065fc;
+    padding-right: 10px;
+}
+
+.bluestar {
+    color: #0065fc;
+}
+
+.graystar {
+    color: #d9d9d9;
+}
+
+.backgroundblue {
+    background-color: #0065fc;
+}
+
+.backgroundclair {
+    background-color: #deebff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.decoration {
+    text-decoration: none;
+    color: blue;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nodeco {
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 20px;
+}
+
+.bar {
+    border-top: 3px solid transparent;
+}
+
+.bar:hover {
+    border-top: 3px solid blue;
+}
+
+.backgroundgray {
+    background-color: #f2f2f2;
+}
+
+input {
+    border: solid 1px #f2f2f2;
+}
+
+.bordurearchbar {
+    width: 400px;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*fin du header*/
+
+.recherche {
+    height: 44px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.buttonsearch {
+    height: 50px;
+    width: 120px;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    cursor: pointer;
+}
+
+.paddingright {
+    padding: 50px;
+}
+
+
+.texticonfiltre:hover>.textefiltre
+
+/*changement d’apparence au survol.(Icone et Texte)*/
+    {
+    color: #0065fc;
+}
+
+.texticonfiltre:hover>.iconfiltre {
+    color: white;
+    background-color: #0065fc;
+}
+
+.marginsearch {
+    margin: 20px;
+}
+
+.colorlink {
+    color: black;
+}
+
+/*Filtre*/
+.texticonfiltre {
+    border-radius: 30px;
+    height: 60px;
+    width: auto;
+    margin-right: 20px;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.bordericon {
+    font-weight: bold;
+    border: solid 3px #f2f2f2;
+    width: 190px;
+    height: auto;
+    border-radius: 40px;
+}
+
+.mfiltre {
+    /*les diferentes marges entre les filtres*/
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.filtretextepad {
+    /*padding decalant le texte de l'icone*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.filtreborder {
+    border: solid 2px black;
+}
+
+.filtremargin {
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.iconfiltre {
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #deebff;
+    margin-left: -3px;
+
+}
+
+.textefiltre {
+    display: flex;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    justify-content: center;
+}
+
+.information {
+    /*cette partie comprrend l'icone inforomation*/
+    display: flex;
+    border: 1px solid #cecbcb;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #0065fc;
+    margin-right: 10px;
+}
+
+/*la partie hebergements a Marseille (les cartes)*/
+
+
+.imgdimension {
+    /*Cette classe represente la taille des images dans la partie hebergement*/
+    height: 138px;
+    width: 98%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px 15px 0 0;
+    margin: 2px;
+}
+
+.bordercard {
+    /*le contour de la carte ou sont disposes les items le titre, le <p> et les images de chaque carte*/
+    width: 30%;
+    height: 211px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 1px;
+    box-shadow: 0 0 15px #0000002e;
+}
+
+.bordercard:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.des {
+    /*marge des differentes description de chaque cartes*/
+    margin-left: 20px;
+    line-height: 21px;
+}
+
+.sizeheberg {
+    /*taille du premier bloc qui fait deux fois la taille du segond*/
+    height: 650px;
+    flex: 2;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.padblocheberg {
+    /*cette class nous permettra de definir les contours du grand bloc hebergement*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.margsection {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/*talle du second bloc*/
+.sizepopu {
+    height: 650px;
+    margin-left: 10px;
+    flex: 1;
+    border-radius: 15px;
+
+}
+
+.bordercardpopu {
+    /*le contour de la carte ou sont disposes les items le titre, le <p> et les images de chaque carte*/
+    width: 80%;
+    height: 150px;
+    background-color: white;
+    padding: 1%;
+    margin-left: 35px;
+    box-shadow: 0 0 15px #0000002e;
+    border-radius: 20px;
+    margin-top: 4px;
+    margin-bottom: 40px;
+}
+
+.bordercardpopu:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.titremargpopu {
+    /*Cette classe va permettre de definir les margin du titre les plus populaires et l'icone etoile*/
+    margin-left: 35px;
+    margin-right: 10px;
+    margin-top: 15px;
+    padding-bottom: 16px;
+    width: 85%;
+}
+
+.imgdimension1 {
+    /*Cette classe represente la taille des images dans la partie les plus populaires*/
+    height: 140px;
+    width: 80%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+    margin: 1px
+}
+
+.carddetailspopu {
+    width: 100%;
+    padding-left: 5%;
+
+}
+
+.starpopu {
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.cardpopumarg {
+    margin-bottom: 40px;
+}
+
+.bloc1marg {
+    width: 100%;
+}
+
+.bloc2marg {
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
+    /*ce margin va permettre d'espacer le deuxieme bloc du <p> afficher plus.*/
+    margin-top: 2px;
+}
+
+/* debut de la partie activites à Marseille*/
+.marginactivite {
+    /*Margin de la partie activite a Marseille qui va permettre d'espacer le bloc de la partie heberg. et le foot*/
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bloc1 {
+    /*Cette classe represente la dimension generale du bloc d'activite a Marseille commprennat les 6 images*/
+    width: 100%;
+    height: 580px;
+}
+
+.detailsactivite {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+    width: 90%;
+
+}
+
+.bloc2 {
+    width: 25%;
+    height: 580px;
+}
+
+.imgactivite1 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 420px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.bordercardactivite {
+    /*Cette classe va nous permettre de fixer la taille de l'image*/
+    width: 23%;
+    border-radius: 15px 15px 15px 15px;
+    height: 480px;
+    box-shadow: 6px 6px 6px 2px #f2f2f2;
+}
+
+.sizetitre {
+    height: 70px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.bordercardactivite2 {
+    /*La creation dees cartes les plus petites a l'aide de ces class*/
+    width: 305px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px 2px #f2f2f2;
+    height: 220px;
+    margin-bottom: 50px;
+}
+
+.bordercardactivite3 {
+    /*La creation dees cartes les plus petites a l'aide de ces class*/
+    width: 305px;
+    border-radius: 15px;
+    box-shadow: 6px 6px 6px 2px #f2f2f2;
+    height: 170px;
+    margin-bottom: 50px;
+}
+
+.imgactivite2 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 160px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.imgactivite3 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 110px;
+    object-fit: cover;
+    background-position: center;
+}
+
+.bordercard {
+    border: solid white 2px;
+    border-radius: 10px
+}
+
+.margin-righttopmarseille {
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.margin-rightmarseille2 {
+    margin-right: 50px;
+}
+
+.margtopcard {
+    margin-left: 30px;
+}
+
+.bordercardactivite:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.bordercardactivite3:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.bordercardactivite2:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/*les proprietes CSS relatives au footer*/
+.foot {
+    height: 310px;
+    margin-top: 54px;
+    line-height: 30px;
+    align-items: center;
+    width: 100%;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+.foottitre {
+    margin-top: 15px;
+}
+
+.sizeblocfoot {
+    height: 155px;
+    width: 95%;
+}
+.paddinfoot {
+    padding-bottom: 30px;
+}
+
+/*la partie Responsive pour la version tablette*/
+@media screen and (max-width: 768px) {
+    .grandbloc {
+        flex-direction: column;
+        background-color: inherit;
+
+    }
+
+    .sizepopu {
+        width: 91%;
+        margin-right: 1px;
+        padding: 1px;
+        margin-bottom: 0;
+        background-color: inherit;
+    }
+
+    .sizeheberg {
+        background-color: inherit;
+        margin-right: 0;
+    }
+
+    .padblocheberg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .bloc1marg {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .bloc2marg {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nodeco {
+        padding-left: 71px;
+    }
+
+    .bloc1 {
+        flex-direction: column;
+    }
+
+    .titremarseillemobile {
+        margin-bottom: 20px;
+    }
+
+    .bordercardactivite {
+        width: 555px;
+        height: 220px;
+        background-color: white;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-bottom: 35px;
+        margin-right: 30px;
+    }
+
+    .bordercardactiviteparc {
+        margin-left: 20px;
+        margin-right: 22px;
+    }
+
+    .bordercardactivite2 {
+        width: 545px;
+        height: 220px;
+        background-color: white;
+        margin-left: 10px;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-bottom: 35px;
+    }
+
+    .bordercardactivite3 {
+        width: 545px;
+        height: 220px;
+        background-color: white;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-bottom: 35px;
+    }
+
+    .imgactivite1 {
+        height: 140px;
+        width: 99.5%;
+        object-fit: cover;
+        background-position: center;
+        margin: 1px
+    }
+
+    .detailsactivitetablette {
+        padding-top: 45px;
+    }
+
+    .foot {
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        top: 1200px;
+    }
+
+    .foottitre {
+        margin-right: 20px;
+    }
+}
+/*la partie Responsive pour la version Mobile*/
+@media screen and (max-width: 767px) {
+    h1 {
+        width: 80%;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bar {
+        border-bottom: solid 2px transparent;
+        border-top: solid 2px transparent;
+    }
+
+    .bar:hover {
+        border-top: transparent;
+        border-bottom: solid 2px blue;
+    }
+
+    .responsive {
+        display: block;
+    }
+
+    .loupe {
+        display: inherit;
+    }
+
+    .logo {
+        align-items: center;
+        justify-content: center;
+        margin-left: 300px;
+        margin-bottom: 10px;
+    }
+
+    .head {
+        display: block;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .recherche {
+        height: 60px;
+        width: 470px;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .mobilesearch {
+        font-size: 28px;
+    }
+
+    .buttonsearch {
+        height: 60px;
+        width: 60px;
+        border-radius: 17px;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sizefiltre {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info {
+        width: 58%;
+        flex-wrap: wrap;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .infomargin {
+        margin-top: 20px;
+    }
+
+    .bordericon {
+        width: 195px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .grandbloc {
+        flex-direction: column;
+    }
+
+    .titrehebergmobile {
+        /*Cette clqsse sert a definir la taille du titre hebergement a Marseille en version mobile*/
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .titremarseillemobile {
+        padding-left: 80px;
+
+    }
+
+    .sizepopu {
+        order: -1;
+        width: 91%;
+        margin-right: 1px;
+        padding: 1px;
+        margin-bottom: 80px;
+    }
+
+    .bordercardpopu {
+        width: 80%;
+        height: 230px;
+        background-color: white;
+        padding: 1%;
+        margin: auto;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .imgdimension1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .carddetailspopu {
+        width: 70%;
+        height: 200px;
+        display: flex;
+        font-size: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .padblocheberg {
+        background-color: inherit;
+    }
+
+    .hebergmobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bordercardactivite {
+        width: 75.5%;
+        height: 235px;
+        padding: 1px;
+        margin-left: 30px;
+        margin-right: 19px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bordercardactivite2 {
+        width: 75%;
+        height: 235px;
+        background-color: white;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+
+    }
+
+    .bordercardactivite3 {
+        width: 535px;
+        height: 235px;
+        background-color: white;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        margin-bottom: 35px;
+        margin-left: 15px;
+    }
+
+    .bordercardactivitemobile1 {
+        width: 535px;
+        height: 235px;
+        padding: 1px;
+        margin-left: 15px;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .bordercardactivitemobile2 {
+        width: 535px;
+        height: 235px;
+        padding: 1px;
+        margin-left: 12px;
+        margin-right: 0;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .head {
+        display: block;
+        border-bottom: 2px solid #f2f2f2;
+        width: auto;
+    }
+
+    .bloc1marg {
+        margin-bottom: 0px;
+        width: 100%;
+        margin-top: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bordercard {
+        width: 75%;
+        height: 235px;
+        padding: 1px;
+        margin-left: 30px;
+        margin-right: 19px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .imgdimension {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        margin: 2px;
+    }
+
+    .bloc2marg {
+        margin-bottom: 0px;
+        width: 100%;
+        margin-top: 13px;
+        flex-direction: column;
+    }
+
+    .imgactivite1 {
+        height: 150px;
+        width: 99.99%;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .imgactivite2 {
+        height: 150px;
+        width: 99.30%;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        margin: 2px;
+    }
+
+    .imgactivite3 {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+        background-position: center;
+        border-radius: 15px 15px 0 0;
+        margin: 2px;
+    }
+
+    .detailsactivitetablette {
+        padding-top: 0;
+    }
+
+    .bloc1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        position: relative;
+        top: 1200px;
+    }
+
+    .footmobile {
+        margin-left: 50px;
+    }
+}
