@@ -1,16 +1,10 @@
+
 * {
     margin: 0;
     padding: 0;
     font-family: Raleway, Arial, Helvetica, sans-serif;
     box-sizing: content-box;
-    align-items: center;
     box-sizing: content-box;
-}
-
-body {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 /*listes des proprietes css generales a l'ensemble de la page*/
@@ -92,6 +86,9 @@ li {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    width: 100%;
+    margin-left: 60px;
+    margin-right: 50px;
 }
 
 .loupe {
@@ -132,9 +129,10 @@ li {
 .backgroundclair {
     background-color: #deebff;
 }
-
-h1 {
+.titre {
     margin-bottom: 10px;
+    margin-left: 50px;
+    line-height: 30px;
 }
 
 .decoration {
@@ -185,11 +183,12 @@ input {
 /*fin du header*/
 
 .recherche {
-    height: 44px;
-    width: 230px;
-    font-size: 18px;
-    color: black;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
     font-weight: bold;
+    color: black;
+    padding-left: 20px;
 }
 
 .buttonsearch {
@@ -216,9 +215,12 @@ input {
     color: white;
     background-color: #0065fc;
 }
-
-.marginsearch {
-    margin: 20px;
+.search {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 
 .colorlink {
@@ -226,77 +228,81 @@ input {
 }
 
 /*Filtre*/
-.texticonfiltre {
-    border-radius: 30px;
-    height: 60px;
-    width: auto;
-    margin-right: 20px;
+.sizefiltre{
+    width: 100%;
+    height: auto;
     display: flex;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-left: 50px;
+
+}
+.texticonfiltre {
+    display: flex;
 }
 
 .bordericon {
     font-weight: bold;
-    border: solid 3px #f2f2f2;
+    border: solid 1.5px #d9d9d9;
     width: 190px;
-    height: auto;
+    height: 45px;
     border-radius: 40px;
+    margin-left: 15px;
 }
-
+.bordericonAA { /*Cette class va nous permetrre d'augmenter le border du filtre Animaux autorises*/
+    font-weight: bold;
+    border: solid 1.5px #d9d9d9;
+    width: 250px;
+    height: 45px;
+    border-radius: 40px;
+    margin-left: 15px;
+}
 .mfiltre {
     /*les diferentes marges entre les filtres*/
     margin-top: 20px;
     margin-bottom: 15px;
 }
-
-.filtretextepad {
-    /*padding decalant le texte de l'icone*/
-    width: 100%;
+.filtretexte {
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.filtreborder {
-    border: solid 2px black;
-}
-
-.filtremargin {
+.filtremarginh1 {
     margin-right: 20px;
     margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
 
 .iconfiltre {
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
+    border-radius: 22.5px;
+    width: 45px;
+    height: 45px;
     background-color: #deebff;
     margin-left: -3px;
+    margin-right: 10px;
 
 }
 
-.textefiltre {
+.info{
     display: flex;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 0 25px 25px 0;
-    justify-content: center;
-}
-
-.information {
-    /*cette partie comprrend l'icone inforomation*/
-    display: flex;
-    border: 1px solid #cecbcb;
-    width: 26px;
-    height: 26px;
-    border-radius: 50%;
+    width: 100%;
     align-items: center;
-    justify-content: center;
+    margin-left: 50px;
+}
+.infoicon {
+    /*cette partie comprrend l'icone inforomation*/
+    border: 1px solid #cecbcb;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
     color: #0065fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
     margin-right: 10px;
 }
 
@@ -348,9 +354,11 @@ input {
     padding-right: 20px;
 }
 
-.margsection {
-    margin-top: 40px;
-    margin-bottom: 60px;
+.grandblocsection {
+    width: auto;
+    display: flex;
+    margin: 50px;
+    
 }
 
 /*talle du second bloc*/
@@ -427,18 +435,27 @@ input {
 }
 
 /* debut de la partie activites à Marseille*/
+.titreactivite{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
 .marginactivite {
     /*Margin de la partie activite a Marseille qui va permettre d'espacer le bloc de la partie heberg. et le foot*/
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
-.bloc1 {
-    /*Cette classe represente la dimension generale du bloc d'activite a Marseille commprennat les 6 images*/
-    width: 100%;
-    height: 580px;
+.blocactivite { /*Cette classe represente la dimension generale du bloc d'activite a Marseille commprennat les 6 images*/
+    width: auto;
+    height: 500px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
+.bloc12activite{/*Cette classe comprend un premier bloc qui contient les 3 premieres images*/
+width: 100%;
+display: flex;
 
+} 
 .detailsactivite {
     height: 70px;
     display: flex;
@@ -449,27 +466,27 @@ input {
 
 }
 
-.bloc2 {
-    width: 25%;
-    height: 580px;
+.bloc2activite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 460px;
 }
-
+.bordercardactivite {
+    /*Cette classe va nous permettre de construire les plus grandes cartes de la partie activite a marseille*/
+    width: 20%;
+    border-radius: 15px 15px 15px 15px;
+    height: 460px;
+    box-shadow: 10px 10px 10px 5px #f2f2f2;
+}
 .imgactivite1 {
     width: 100%;
     border-radius: 15px 15px 0 0;
-    height: 420px;
+    height: 380px;
     object-fit: cover;
     background-position: center;
 }
-
-.bordercardactivite {
-    /*Cette classe va nous permettre de fixer la taille de l'image*/
-    width: 23%;
-    border-radius: 15px 15px 15px 15px;
-    height: 480px;
-    box-shadow: 6px 6px 6px 2px #f2f2f2;
-}
-
 .sizetitre {
     height: 70px;
     margin-left: 20px;
@@ -478,7 +495,7 @@ input {
 
 .bordercardactivite2 {
     /*La creation dees cartes les plus petites a l'aide de ces class*/
-    width: 305px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 6px 6px 6px 2px #f2f2f2;
     height: 220px;
@@ -487,7 +504,7 @@ input {
 
 .bordercardactivite3 {
     /*La creation dees cartes les plus petites a l'aide de ces class*/
-    width: 305px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 6px 6px 6px 2px #f2f2f2;
     height: 170px;
@@ -519,15 +536,6 @@ input {
     margin-right: 30px;
     margin-top: 50px;
 }
-
-.margin-rightmarseille2 {
-    margin-right: 50px;
-}
-
-.margtopcard {
-    margin-left: 30px;
-}
-
 .bordercardactivite:hover {
     cursor: pointer;
     transform: scale(1.03);
@@ -547,33 +555,25 @@ input {
 .foot {
     height: 310px;
     margin-top: 54px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
     line-height: 30px;
     align-items: center;
-    width: 100%;
-    margin-left: inherit;
-    margin-right: inherit;
-}
-
-.foottitre {
-    margin-top: 15px;
-}
-
-.sizeblocfoot {
-    height: 155px;
-    width: 95%;
+    width: 70%;
 }
 .paddinfoot {
     padding-bottom: 30px;
 }
-
 /*la partie Responsive pour la version tablette*/
-@media screen and (max-width: 768px) {
-    .grandbloc {
+@media screen and (max-width: 767px) {
+    .grandblocsection {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 60px;
         flex-direction: column;
         background-color: inherit;
-
     }
-
     .sizepopu {
         width: 91%;
         margin-right: 1px;
@@ -610,7 +610,7 @@ input {
         flex-direction: column;
     }
 
-    .titremarseillemobile {
+    .titreactivite {
         margin-bottom: 20px;
     }
 
@@ -647,15 +647,6 @@ input {
         border-radius: 20px;
         margin-bottom: 35px;
     }
-
-    .imgactivite1 {
-        height: 140px;
-        width: 99.5%;
-        object-fit: cover;
-        background-position: center;
-        margin: 1px
-    }
-
     .detailsactivitetablette {
         padding-top: 45px;
     }
@@ -674,12 +665,13 @@ input {
     }
 }
 /*la partie Responsive pour la version Mobile*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px){
     h1 {
         width: 80%;
         font-size: 40px;
         margin-top: 20px;
         margin-bottom: 10px;
+        background-color: purple;
     }
 
     .bar {
@@ -737,9 +729,6 @@ input {
         color: white;
         cursor: pointer;
     }
-}
-
-@media screen and (max-width: 767px) {
     .sizefiltre {
         width: 100%;
         flex-direction: column;
@@ -753,18 +742,12 @@ input {
         line-height: 27px;
     }
 
-    .infomargin {
+    .infomarginMobile {
         margin-top: 20px;
     }
 
     .bordericon {
         width: 195px;
-    }
-}
-
-@media screen and (max-width:767px) {
-    .grandbloc {
-        flex-direction: column;
     }
 
     .titrehebergmobile {
@@ -798,10 +781,6 @@ input {
         margin-bottom: 40px;
     }
 
-    .imgdimension1 {
-        height: 100%;
-        width: 100%;
-    }
 
     .carddetailspopu {
         width: 70%;
@@ -877,9 +856,6 @@ input {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-}
-
-@media screen and (max-width: 767px) {
     .head {
         display: block;
         border-bottom: 2px solid #f2f2f2;
