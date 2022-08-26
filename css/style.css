@@ -152,6 +152,10 @@ li {
     padding-right: 62px;
     padding-bottom: 20px;
 }
+.nodecocard{
+    text-decoration: none;
+    color: black;
+}
 
 .bar {
     border-top: 3px solid transparent;
@@ -367,7 +371,6 @@ input {
     margin-left: 10px;
     flex: 1;
     border-radius: 15px;
-
 }
 
 .bordercardpopu {
@@ -381,6 +384,9 @@ input {
     border-radius: 20px;
     margin-top: 4px;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bordercardpopu:hover {
@@ -450,11 +456,11 @@ input {
     height: 500px;
     margin-left: 50px;
     margin-right: 50px;
+    display: flex;
 }
 .bloc12activite{/*Cette classe comprend un premier bloc qui contient les 3 premieres images*/
-width: 100%;
+width: 50%;
 display: flex;
-
 } 
 .detailsactivite {
     height: 70px;
@@ -470,15 +476,18 @@ display: flex;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 40%;
     height: 460px;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .bordercardactivite {
     /*Cette classe va nous permettre de construire les plus grandes cartes de la partie activite a marseille*/
-    width: 20%;
+    width: 40%;
     border-radius: 15px 15px 15px 15px;
     height: 460px;
     box-shadow: 10px 10px 10px 5px #f2f2f2;
+    margin-right: 10%;
 }
 .imgactivite1 {
     width: 100%;
@@ -498,7 +507,7 @@ display: flex;
     width: 100%;
     border-radius: 15px;
     box-shadow: 6px 6px 6px 2px #f2f2f2;
-    height: 220px;
+    height: 320px;
     margin-bottom: 50px;
 }
 
@@ -531,10 +540,11 @@ display: flex;
     border: solid white 2px;
     border-radius: 10px
 }
-
-.margin-righttopmarseille {
-    margin-right: 30px;
-    margin-top: 50px;
+.marginactivite1{
+margin-right: 25px;
+}
+.marginactivite2{
+    margin-left: 25px;
 }
 .bordercardactivite:hover {
     cursor: pointer;
