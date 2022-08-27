@@ -1,4 +1,7 @@
-
+body{
+   overflow-x: hidden;
+   height: auto;
+}
 * {
     margin: 0;
     padding: 0;
@@ -85,10 +88,13 @@ li {
 .head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     width: 100%;
     margin-left: 60px;
     margin-right: 50px;
+    margin-top: 30px;
+
+
 }
 
 .loupe {
@@ -140,23 +146,31 @@ li {
     color: blue;
     padding-right: 50px;
     padding-left: 50px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
 .nodeco {
     text-decoration: none;
     color: black;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 62px;
     padding-right: 62px;
     padding-bottom: 20px;
+    margin-right: 50px;
 }
 .nodecocard{
     text-decoration: none;
     color: black;
 }
+.nodecolink{
+    text-decoration: none;
+    color: black;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
 
+}
 .bar {
     border-top: 3px solid transparent;
 }
@@ -240,6 +254,7 @@ input {
     justify-content: flex-start;
     margin-bottom: 30px;
     margin-left: 50px;
+    flex-wrap: wrap;
 
 }
 .texticonfiltre {
@@ -315,8 +330,8 @@ input {
 
 .imgdimension {
     /*Cette classe represente la taille des images dans la partie hebergement*/
-    height: 138px;
-    width: 98%;
+    height: 120px;
+    width: 100%;
     object-fit: cover;
     background-position: center;
     border-radius: 15px 15px 0 0;
@@ -326,11 +341,15 @@ input {
 .bordercard {
     /*le contour de la carte ou sont disposes les items le titre, le <p> et les images de chaque carte*/
     width: 30%;
-    height: 211px;
+    height: 205px;
     background-color: white;
-    border-radius: 30px;
-    margin-bottom: 1px;
+    border-radius: 20px;
     box-shadow: 0 0 15px #0000002e;
+    border: solid white 2px;
+    display: block;
+    font-size: 13.5px;
+    padding: 1px;
+    padding-right: 5px;
 }
 
 .bordercard:hover {
@@ -351,7 +370,11 @@ input {
     margin-right: 20px;
     border-radius: 15px;
 }
-
+.titreheberg{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
 .padblocheberg {
     /*cette class nous permettra de definir les contours du grand bloc hebergement*/
     padding-left: 20px;
@@ -371,22 +394,26 @@ input {
     margin-left: 10px;
     flex: 1;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .bordercardpopu {
     /*le contour de la carte ou sont disposes les items le titre, le <p> et les images de chaque carte*/
     width: 80%;
-    height: 150px;
+    height: 130px;
     background-color: white;
-    padding: 1%;
-    margin-left: 35px;
     box-shadow: 0 0 15px #0000002e;
     border-radius: 20px;
-    margin-top: 4px;
+    margin-top: 7px;
     margin-bottom: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 13.5px;
+    padding: 3px;
 }
 
 .bordercardpopu:hover {
@@ -394,18 +421,17 @@ input {
     transform: scale(1.05);
 }
 
-.titremargpopu {
-    /*Cette classe va permettre de definir les margin du titre les plus populaires et l'icone etoile*/
+.titremargpopu {    /*Cette classe va permettre de definir les margin du titre les plus populaires et l'icone etoile*/
     margin-left: 35px;
     margin-right: 10px;
-    margin-top: 15px;
-    padding-bottom: 16px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     width: 85%;
 }
 
-.imgdimension1 {
-    /*Cette classe represente la taille des images dans la partie les plus populaires*/
-    height: 140px;
+.imgdimension1 { /*Cette classe represente la taille des images dans la partie les plus populaires*/
+   
+    height: 128px;
     width: 80%;
     object-fit: cover;
     background-position: center;
@@ -420,24 +446,26 @@ input {
 }
 
 .starpopu {
-    margin-top: 50px;
-    margin-bottom: 0;
+    margin-top: 35px;
 }
 
 .cardpopumarg {
     margin-bottom: 40px;
 }
 
-.bloc1marg {
+.bloc1hebergement {
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
-.bloc2marg {
-    margin-top: 50px;
+.bloc2hebergement { 
     width: 100%;
-    margin-bottom: 50px;
-    /*ce margin va permettre d'espacer le deuxieme bloc du <p> afficher plus.*/
-    margin-top: 2px;
+    margin-top: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* debut de la partie activites à Marseille*/
@@ -458,8 +486,8 @@ input {
     margin-right: 50px;
     display: flex;
 }
-.bloc12activite{/*Cette classe comprend un premier bloc qui contient les 3 premieres images*/
-width: 50%;
+.bloc12activite{/*Cette classe comprend un des premier bloc qui contient les 3 premieres cartes*/
+width: 51.5%;
 display: flex;
 } 
 .detailsactivite {
@@ -483,7 +511,7 @@ display: flex;
 }
 .bordercardactivite {
     /*Cette classe va nous permettre de construire les plus grandes cartes de la partie activite a marseille*/
-    width: 40%;
+    width: 50%;
     border-radius: 15px 15px 15px 15px;
     height: 460px;
     box-shadow: 10px 10px 10px 5px #f2f2f2;
@@ -535,11 +563,6 @@ display: flex;
     object-fit: cover;
     background-position: center;
 }
-
-.bordercard {
-    border: solid white 2px;
-    border-radius: 10px
-}
 .marginactivite1{
 margin-right: 25px;
 }
@@ -576,30 +599,35 @@ margin-right: 25px;
     padding-bottom: 30px;
 }
 /*la partie Responsive pour la version tablette*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 991px) and (min-width: 768px){
     .grandblocsection {
         display: flex;
         margin-top: 40px;
         margin-bottom: 60px;
         flex-direction: column;
-        background-color: inherit;
+        align-items: center;
+        justify-content: center;
     }
-    .sizepopu {
-        width: 91%;
-        margin-right: 1px;
-        padding: 1px;
-        margin-bottom: 0;
-        background-color: inherit;
-    }
-
     .sizeheberg {
+       width: 97%;
         background-color: inherit;
         margin-right: 0;
     }
-
-    .padblocheberg {
-        padding-left: 0;
-        padding-right: 0;
+    .titremargpopu { 
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+        line-height: 50px;
+    }
+    .sizepopu {
+        width: 70%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: inherit;
+        margin: 0;
     }
 
     .bloc1marg {
@@ -675,7 +703,10 @@ margin-right: 25px;
     }
 }
 /*la partie Responsive pour la version Mobile*/
-@media screen and (max-width: 320px){
+@media screen and (max-width: 767px){
+    body{
+        margin: 0;
+    }
     h1 {
         width: 80%;
         font-size: 40px;
@@ -761,37 +792,47 @@ margin-right: 25px;
     }
 
     .titrehebergmobile {
-        /*Cette clqsse sert a definir la taille du titre hebergement a Marseille en version mobile*/
         font-size: 30px;
         font-weight: bold;
     }
+    .grandblocsection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .sizepopu{
+        width: 100%;
+        margin: 0;
+        padding: 55px;
+        justify-content: center;
+        align-items: center;
+    }
+    .bordercardpopu {
+        width: 100%;
+        height: 230px;
+        background-color: white;
+        box-shadow: 0 0 15px #0000002e;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+    .imgdimension1 {
+        height: 225px;
+    }
+    
+    }
+
+
+
+
+
+        /* Les lignes de code en de sous ont ete ecrites avant les modifications apportes au projet*
+    
 
     .titremarseillemobile {
         padding-left: 80px;
 
     }
-
-    .sizepopu {
-        order: -1;
-        width: 91%;
-        margin-right: 1px;
-        padding: 1px;
-        margin-bottom: 80px;
-    }
-
-    .bordercardpopu {
-        width: 80%;
-        height: 230px;
-        background-color: white;
-        padding: 1%;
-        margin: auto;
-        box-shadow: 0 0 15px #0000002e;
-        border-radius: 20px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-    }
-
-
     .carddetailspopu {
         width: 70%;
         height: 200px;
@@ -800,10 +841,6 @@ margin-right: 25px;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-    }
-
-    .padblocheberg {
-        background-color: inherit;
     }
 
     .hebergmobile {
