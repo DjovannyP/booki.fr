@@ -614,13 +614,6 @@ margin-right: 25px;
         background-color: inherit;
         margin-right: 0;
     }
-    .titremargpopu { 
-        margin: 0;
-        display: flex;
-        flex-direction: column-reverse;
-        margin-bottom: 15px;
-        line-height: 50px;
-    }
     .sizepopu {
         width: 50%;
         height: auto;
@@ -729,9 +722,8 @@ margin-right: 25px;
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 30px;
+        font-size: 20px;
         flex-wrap: nowrap;
-        backdrop-filter: ;
     }
 
     .info {
@@ -748,17 +740,19 @@ margin-right: 25px;
     .bordericon {
         width: 195px;
     }
-
-    .titrehebergmobile {
-        font-size: 30px;
-        font-weight: bold;
-    }
     .grandblocsection{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
+    .titremargpopu {  
+        width: 100%;
+        font-size: 25px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    
     .sizepopu{
         width: 100%;
         margin: 0;
@@ -772,20 +766,76 @@ margin-right: 25px;
         background-color: white;
         box-shadow: 0 0 15px #0000002e;
         border-radius: 20px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .imgdimension1 {
         height: 225px;
+        object-fit: center;
     }
-    
-
-    
-
-    .titremarseillemobile {
-        padding-left: 80px;
-
+    .titreheberg{
+        font-size: 25px;
+        margin-left: 0;
+        margin-top: 60px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
     }
-    .carddetailspopu {
+    .sizeheberg{
+        display: flex;
+        flex-direction: column;
+        background-color:inherit;
+        margin: 0;
+        width: 100%;
+    }
+    .bloc1hebergement{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .bloc2hebergement{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .bordercard{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .des{
+        width: 100%;
+        line-height: 30px;
+        display: inline-block;
+        align-items: space-around;
+        height: 125px;
+    }
+    .imgdimension {
+        height: 150px;
+        object-fit: cover;
+        background-position: center;
+    }
+    .titreactivite {
+        font-size: 25px; 
+    }
+    .blocactivite{
+        width: 86.6%;
+        height: auto;
+        flex-direction: column;
+        padding: 0;
+        margin-bottom: 50px	;
+    }
+    .bloc12activite{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+    /*.carddetailspopu {
         width: 70%;
         height: 200px;
         display: flex;
@@ -793,72 +843,32 @@ margin-right: 25px;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-    }
-
-    .hebergmobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+    }*/
 
     .bordercardactivite {
-        width: 75.5%;
-        height: 235px;
-        padding: 1px;
-        margin-left: 30px;
-        margin-right: 19px;
-        border-radius: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        margin-bottom: 40px;
+        font-size: 20px;
     }
 
     .bordercardactivite2 {
-        width: 75%;
-        height: 235px;
-        background-color: white;
-        box-shadow: 0 0 15px #0000002e;
-        border-radius: 20px;
-        margin-bottom: 20px;
-        margin-right: 10px;
-
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        font-size: 20px;
     }
 
     .bordercardactivite3 {
-        width: 535px;
-        height: 235px;
-        background-color: white;
-        box-shadow: 0 0 15px #0000002e;
-        border-radius: 20px;
-        margin-bottom: 35px;
-        margin-left: 15px;
-    }
-
-    .bordercardactivitemobile1 {
-        width: 535px;
-        height: 235px;
-        padding: 1px;
-        margin-left: 15px;
-        margin-right: 0;
-        border-radius: 20px;
-        margin-top: 50px;
-        margin-bottom: 20px;
-    }
-
-    .bordercardactivitemobile2 {
-        width: 535px;
-        height: 235px;
-        padding: 1px;
-        margin-left: 12px;
-        margin-right: 0;
-        border-radius: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .head {
-        display: block;
-        border-bottom: 2px solid #f2f2f2;
-        width: auto;
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        margin-bottom: 40px;
+        padding: 0;
+        font-size: 20px;
     }
 
     .bloc1marg {
@@ -868,27 +878,6 @@ margin-right: 25px;
         display: flex;
         flex-direction: column;
     }
-
-    .bordercard {
-        width: 75%;
-        height: 235px;
-        padding: 1px;
-        margin-left: 30px;
-        margin-right: 19px;
-        border-radius: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .imgdimension {
-        height: 150px;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        border-radius: 15px 15px 0 0;
-        margin: 2px;
-    }
-
     .bloc2marg {
         margin-bottom: 0px;
         width: 100%;
@@ -897,16 +886,17 @@ margin-right: 25px;
     }
 
     .imgactivite1 {
-        height: 150px;
-        width: 99.99%;
+        height: 210px;
+        width: 100%;
         object-fit: cover;
-        background-position: center;
+        background-position: top;
         border-radius: 15px 15px 0 0;
+        margin: 2px;
     }
 
     .imgactivite2 {
-        height: 150px;
-        width: 99.30%;
+        height: 210px;
+        width: 100%;
         object-fit: cover;
         background-position: center;
         border-radius: 15px 15px 0 0;
@@ -914,7 +904,7 @@ margin-right: 25px;
     }
 
     .imgactivite3 {
-        height: 150px;
+        height: 210px;
         width: 100%;
         object-fit: cover;
         background-position: center;
@@ -936,10 +926,10 @@ margin-right: 25px;
         height: auto;
         display: inline-block;
         position: relative;
-        top: 1200px;
     }
 
     .footmobile {
         margin-left: 50px;
+        margin-top: 50px;
     }
 }
