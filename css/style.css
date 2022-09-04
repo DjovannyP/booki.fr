@@ -49,11 +49,10 @@ li {
     justify-content: space-between;
     flex-direction: column;
 }
-/*Fin de l'ensemble des proprietes css applicables a l'ensemble de la page*/
 /*Ensemble de style apliquer au header*/
 .iconsize {
     border-radius: 10px 0 0 10px;
-    height: 50px;
+    height: 54px;
     width: 50px;
     align-items: center;
     justify-content: center;
@@ -97,7 +96,6 @@ li {
     margin-left: 50px;
     line-height: 30px;
 }
-
 .decoration {
     text-decoration: none;
     color: blue;
@@ -125,6 +123,7 @@ li {
     color: black;
     padding-top: 40px;
     padding-bottom: 50px;
+    margin-left: 15px;
 
 }
 .bar {
@@ -150,7 +149,7 @@ li {
 }
 
 .buttonsearch {
-    height: 50px;
+    height: 54px;
     width: 120px;
     border-radius: 0 10px 10px 0;
     color: white;
@@ -222,7 +221,7 @@ li {
     width: 45px;
     height: 45px;
     background-color: #deebff;
-    margin-left: -3px;
+    margin-left: -2px;
     margin-right: 10px;
 
 }
@@ -292,7 +291,7 @@ li {
 
 .sizeheberg {
     /*taille du premier bloc qui fait deux fois la taille du segond*/
-    height: 650px;
+    height: 620px;
     flex: 2;
     margin-right: 20px;
     border-radius: 15px;
@@ -301,6 +300,7 @@ li {
 }
 .titreheberg{
     margin-top: 40px;
+    margin-left: 15px;
 }
 
 .grandblocsection {
@@ -310,7 +310,7 @@ li {
 }
 /*talle du second bloc*/
 .sizepopu {
-    height: 650px;
+    height: 620px;
     margin-left: 10px;
     flex: 1;
     border-radius: 15px;
@@ -504,6 +504,9 @@ margin-right: 25px;
 .paddinfoot {
     padding-bottom: 30px;
 }
+.footback{
+    background-color: #f2f2f2;
+}
 /*la partie Responsive pour la version tablette*/
 @media screen and (max-width: 991px) and (min-width: 768px){
     .sizefiltre{
@@ -539,15 +542,6 @@ margin-right: 25px;
         width: 100%;
         display: block;
     }
-    .bordercardactivite2{
-        width: 100%;
-        background-color: lightpink;
-        margin-bottom: 50px;
-    }
-    .bordercardactivite3{
-        width: 100%;
-        background-color: lightpink;
-    }
     .sizepopu {
         width: 50%;
         height: auto;
@@ -572,15 +566,48 @@ margin-right: 25px;
     .bloc1 {
         flex-direction: column;
     }
-    .blocactivite{
-        background-color: purple;
-    }
     .titreactivite {
         margin-bottom: 20px;
     }
+    .bordercardactivite{
+        width: 100%;
+        height: 200px;
+        box-shadow: 5px #cecbcb;
+        display: block;
+        margin-bottom: 40px;
+    }
+    .bordercardactivite2 {
+        height: 200px;
+        display: block;
+        width: 100%;
+        box-shadow: 5px #cecbcb;
+        margin-bottom: 40px;
+
+    }
+    .bordercardactivite3 {
+        height: 200px;
+        width: 100%;
+        display: block;
+        box-shadow: 5px #cecbcb;
+        margin-bottom: 40px;
+    }
+    .imgactivite1{
+        height: 130px;
+    }
+    .imgactivite2{
+        height: 130px;
+    }
+    .imgactivite3{
+        height: 130px;
+    }
+    .footback{
+      background-color: inherit;
+    }
     .foot{
-background-color: aqua;
-    
+        margin-bottom: 20px;
+    position: relative;
+    top: 150px;
+    width: 80%;
 }
 }
 
@@ -596,11 +623,14 @@ background-color: aqua;
         margin: 0;
     }
     h1 {
-        width: 80%;
-        font-size: 40px;
+        width: 100%;
+        font-size: 45px;
         margin-top: 20px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         line-height: 42px;
+    }
+    .slogan{
+        font-size: 28px
     }
     .bar {
         border-bottom: solid 2px transparent;
@@ -611,6 +641,7 @@ background-color: aqua;
         border-bottom: solid 2px blue;
     }
     .search{
+        width: 90%;
         font-size: 30px;
     }
     .iconsize{
@@ -641,13 +672,13 @@ background-color: aqua;
     }
     .recherche {
         height: 60px;
-        width: 470px;
+        width: 500px;
         font-size: 30px;
         color: black;
         font-weight: bold;
     }
     .buttonsearch {
-        height: 60px;
+        height: 65px;
         width: 60px;
         border-radius: 17px;
         color: white;
@@ -662,14 +693,15 @@ background-color: aqua;
         flex-wrap: nowrap;
     }
     .info {
-        width: 58%;
-        flex-wrap: wrap;
+        display: flex;
+        width: 80%;
         font-size: 20px;
         line-height: 27px;
         margin-top: 20px;
     }
     .bordericon {
-        width: 195px;
+        width: 230px;
+        margin-bottom: 25px;
     }
     .grandblocsection{
         display: flex;
@@ -751,6 +783,7 @@ background-color: aqua;
         font-size: 25px; 
     }
     .blocactivite{
+        margin: 50px;
         width: 86.6%;
         height: auto;
         flex-direction: column;
@@ -761,6 +794,7 @@ background-color: aqua;
         flex-direction: column;
         width: 100%;
         margin: 0;
+        padding: 0;
     }
     .bordercardactivite {
         width: 100%;
