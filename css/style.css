@@ -1,6 +1,6 @@
 body{
-   overflow-x: hidden;
-   height: auto;
+    width: auto;
+    overflow-x: hidden;
 }
 * {
     margin: 0;
@@ -286,7 +286,7 @@ li {
     display: inline-block;
     height: 60px;
     margin-left: 10px;
-    line-height: 22px;
+    line-height: 20px;
 }
 
 .sizeheberg {
@@ -347,22 +347,28 @@ li {
 }
 .imgdimension1 { /*Cette classe represente la taille des images dans la partie les plus populaires*/  
     height: 130px;
-    width: 100%;
+    width: 120px;
     object-fit: cover;
     background-position: center;
     border-radius: 15px 0 0 15px;
     margin: 1px
 }
-.imgdimension2{
-    height: 128px;
-    width: 47%;
+.imgdimension2 {
+    height: 130px;
+    width: 170px;
     object-fit: cover;
-    background-position: cover;
+    background-position: center;
     border-radius: 15px 0 0 15px;
+    margin: 1px;
+    position: relative;
+    max-width: max-content;
+    
 }
 .carddetailspopu {
-    width: 100%;
+    width: 80%;
+    height: auto;
     padding-left: 5%;
+    line-height: 15px;
 }
 .starpopu {
     margin-top: 35px;
@@ -400,6 +406,7 @@ li {
 }
 .bloc12activite{/*Cette classe comprend un des premier bloc qui contient les 3 premieres cartes*/
 width: 51.5%;
+height: auto;
 display: flex;
 } 
 .detailsactivite {
@@ -485,7 +492,6 @@ margin-right: 25px;
     cursor: pointer;
     transform: scale(1.03);
 }
-
 .bordercardactivite2:hover {
     cursor: pointer;
     transform: scale(1.03);
@@ -507,16 +513,32 @@ margin-right: 25px;
 .footback{
     background-color: #f2f2f2;
 }
-/*la partie Responsive pour la version tablette*/
-@media screen and (max-width: 991px) and (min-width: 768px){
+@media screen and (max-width: 1020px) and (min-width: 992px){ /*Responsive Desktop*/
     .sizefiltre{
-        Display: flex;
-        width: 100%;
-        flex-wrap: nowrap;
+        font-size: 11.9px;
+        }
     }
+@media screen and (max-width: 1020px){
+    .des1{
+        margin: 5px;
+    line-height: 15px;
+    }
+    .carddetailspopu{
+        font-size: 11.9px;
+
+    }
+    }
+@media screen and (max-width: 991px) and (min-width: 768px){
+
     .texticonfiltre{
         margin-bottom: 20px;
     }
+    .sizefiltre{
+        Display: inline-block;
+        width: 100%;
+        margin-left: 50px;
+        font-size: large;
+        }
     .grandblocsection {
         display: flex;
         margin-top: 40px;
@@ -526,9 +548,10 @@ margin-right: 25px;
         justify-content: center;
     }
     .sizeheberg {
-       width: 97%;
+       width: 100%;
         background-color: inherit;
         margin-right: 0;
+        padding: 0;
     }
     .nodecolink{
         color: blue;
@@ -572,7 +595,6 @@ margin-right: 25px;
     .bordercardactivite{
         width: 100%;
         height: 200px;
-        box-shadow: 5px #cecbcb;
         display: block;
         margin-bottom: 40px;
     }
@@ -580,7 +602,6 @@ margin-right: 25px;
         height: 200px;
         display: block;
         width: 100%;
-        box-shadow: 5px #cecbcb;
         margin-bottom: 40px;
 
     }
@@ -588,7 +609,6 @@ margin-right: 25px;
         height: 200px;
         width: 100%;
         display: block;
-        box-shadow: 5px #cecbcb;
         margin-bottom: 40px;
     }
     .imgactivite1{
@@ -610,27 +630,38 @@ margin-right: 25px;
     width: 80%;
 }
 }
-
-@media screen and (max-width: 1013px){
-    .des1{
-        margin: 5px;
-    line-height: 15px;
-    }
-}
 /*la partie Responsive pour la version Mobile*/
 @media screen and (max-width: 767px){
     body{
         margin: 0;
     }
+    
+    .logo {
+        align-items: center;
+        justify-content: center;
+        padding-right: 50%;
+        padding-left: 45%;
+        margin-bottom: 20px;
+    }
+    .head {
+        display: block;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f2f2f2;
+        margin-left: 0;
+        font-size: xx-large;
+        margin-top: 100px;
+    }
     h1 {
-        width: 100%;
-        font-size: 45px;
-        margin-top: 20px;
+        width: 90%;
+        margin-top: 60px;
         margin-bottom: 30px;
-        line-height: 42px;
+        line-height: 50px;
+        font-size: 40px;
     }
     .slogan{
-        font-size: 28px
+        font-size: 30px;
+        margin-bottom: 50px;
     }
     .bar {
         border-bottom: solid 2px transparent;
@@ -641,8 +672,7 @@ margin-right: 25px;
         border-bottom: solid 2px blue;
     }
     .search{
-        width: 90%;
-        font-size: 30px;
+        font-size: xx-large;
     }
     .iconsize{
         width: 70px;
@@ -653,19 +683,6 @@ margin-right: 25px;
     }
     .loupe {
         display: inherit;
-    }
-    .logo {
-        align-items: center;
-        justify-content: center;
-        margin-right: 50%;
-        margin-left: 39%;
-        margin-bottom: 10px;
-    }
-    .head {
-        display: block;
-        justify-content: space-between;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #f2f2f2;
     }
     .hide {
         display: none;
@@ -689,19 +706,46 @@ margin-right: 25px;
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 20px;
-        flex-wrap: nowrap;
+        font-size: 40px;
     }
     .info {
         display: flex;
-        width: 80%;
-        font-size: 20px;
-        line-height: 27px;
+        width: 90%;
+        font-size: xx-large;
         margin-top: 20px;
     }
+    .infoicon{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        font-size: xx-large;
+    }
     .bordericon {
-        width: 230px;
+        width: 300px;
+        height: 60px;
         margin-bottom: 25px;
+    }
+    .bordericonAA{
+        width: 300px;
+        height: 60px;
+        font-size: 32px;
+    }
+    .filtretexte{
+        width: 100%;
+    }
+    .iconfiltre{
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+    }
+    .des{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: larger;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .grandblocsection{
         display: flex;
@@ -727,19 +771,37 @@ margin-right: 25px;
         height: 230px;
         background-color: white;
         box-shadow: 0 0 15px #0000002e;
-        border-radius: 20px;
+        border-radius: 40px;
         font-size: 20px;
+
     }
     .imgdimension{
-        height: 180px;
+        width: 99%;
+        height: 170px;
+        margin: 5px;
+        border-radius: 40px 40px 0 0;
+        
     }
     .imgdimension1 {
-        height: 225px;
-        object-fit: center;
+        width: 50%;
+        height: 220px;
+        margin-left: 5px;
+        border-radius: 40px 0 0 40px;
     }
     .imgdimension2{
-        width: 47%;
-        height: 225px;
+        width: 50%;
+        height: 220px;
+        margin-left: 5px;
+        border-radius: 40px 0 0 40px;
+    }
+    .carddetailspopu{
+        font-size: larger;
+        line-height: 25px;
+        width: 50%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .titreheberg{
         font-size: 25px;
@@ -773,22 +835,28 @@ margin-right: 25px;
     .bordercard{
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding-right: 5px;
         height: 300px;
         margin-bottom: 40px;
-        font-size: 20px;
+        font-size: larger;
         line-height: 50px;
+        border-radius: 40px;
     }
+    .nodecolink{
+        font-size: xx-large;
+        padding-top: 0;
+        margin: 0;
+    }
+    
     .titreactivite {
-        font-size: 25px; 
+        font-size: xx-large; 
     }
     .blocactivite{
-        margin: 50px;
-        width: 86.6%;
-        height: auto;
+        width: auto;
+        height: 2050px;
         flex-direction: column;
-        padding: 0;
-        margin-bottom: 50px	;
+        margin: 50px;
+
     }
     .bloc12activite{
         flex-direction: column;
@@ -800,16 +868,19 @@ margin-right: 25px;
         width: 100%;
         height: 300px;
         margin: 0;
+        padding: 0;
         margin-bottom: 40px;
-        font-size: 20px;
+        font-size: x-large;
+        border-radius: 40px;
     }
     .bordercardactivite2 {
         width: 100%;
         height: 300px;
         margin: 0;
-        margin-bottom: 40px;
         padding: 0;
-        font-size: 20px;
+        margin-bottom: 40px;
+        font-size: x-large;
+        border-radius: 40px;
     }
     .bordercardactivite3 {
         width: 100%;
@@ -817,7 +888,11 @@ margin-right: 25px;
         margin: 0;
         margin-bottom: 40px;
         padding: 0;
-        font-size: 20px;
+        font-size: x-large;
+        border-radius: 40px;
+    }
+    .detailsactivite{
+        padding-left: 20px;
     }
     .bloc1marg {
         margin-bottom: 0px;
@@ -833,29 +908,36 @@ margin-right: 25px;
         flex-direction: column;
     }
     .imgactivite1 {
-        height: 210px;
+        height: 200px;
         width: 100%;
         object-fit: cover;
         background-position: top;
-        border-radius: 15px 15px 0 0;
+        border-radius: 40px 40px 0 0;
         margin: 2px;
     }
     .imgactivite2 {
-        height: 210px;
+        height: 200px;
         width: 100%;
         object-fit: cover;
         background-position: center;
-        border-radius: 15px 15px 0 0;
+        border-radius: 40px 40px 0 0;
         margin: 2px;
     }
     .imgactivite3 {
-        height: 210px;
+        height: 200px;
         width: 100%;
         object-fit: cover;
         background-position: center;
-        border-radius: 15px 15px 0 0;
+        border-radius: 40px 40px 0 0;
         margin: 2px;
     }
+    .marginactivite1{
+        margin-right: 0;
+        
+        }
+        .marginactivite2{
+            margin-left: 0;
+        }
     .bloc1 {
         display: flex;
         flex-direction: column;
@@ -864,10 +946,16 @@ margin-right: 25px;
         width: 100%;
         height: auto;
         display: inline-block;
-        position: relative;
     }
     .footmobile {
         margin-left: 50px;
         margin-top: 50px;
+    }
+
+}
+@media screen and (max-width: 700px){
+    .search{
+        width: 50%;
+        font-size: 50px;
     }
 }
