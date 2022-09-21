@@ -1,280 +1,286 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-	<title>Booki.fr</title>
-	<meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-	<script src="https://kit.fontawesome.com/c8e49d9bed.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<header>
-		<div class="head">
-			<img src="images/logo/Booki@3x.png" class= "logo" alt="Logo">
-			<div class="flexaround">
-				<div><a class= "decoration bar" href="#HébergementàMarseille">Hébergement</a></div>
-				<div><a class="nodeco bar" href="#AcitivitésàMarseille">Acitivités</a></div>
+  <head>
+    <title>Booki.fr</title>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/c8e49d9bed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="head">
+        <img src="images/logo/Booki@3x.png" class="logo" alt="Logo" />
+        <div class="flexaround">
+          <div><a class="decoration bar" href="#HébergementàMarseille">Hébergement</a></div>
+          <div><a class="nodeco bar" href="#AcitivitésàMarseille">Activités</a></div>
+        </div>
       </div>
-		</div>
-	</header>	
-	<section class="filtremobile">
-		<div class="titre">
-			<h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-			<div class="slogan"><p>En plein centre ville ou en pleine nature</p></div>
-		</div>
-		<div class="search">
-			<!--div principal de la zone de recherche-->
-			<div class="iconsize flexcenter backgroundgray"><i class="fa-solid fa-location-dot"></i></div>
-			<form method="post" action="traitement.php">
-				<div><input class="recherche flexcenter" type="search"
-							placeholder="Marseille, France"/></div>
-			</form>
-			<div class="backgroundblue buttonsearch bold flexcenter"><div class="loupe"><i class="fas fa-search"></i></div><span class="hide">Rechercher</span></div><!--le bouton de la bar de recherche qui n'est pas cliquable-->
-		</div>
-		</section>
-	<section>
-		<!--commencement de la partie filtre-->
-		<div class="sizefiltre">
-			<h3 class="filtremarginh1">Filtres</h3>
-			<div class="flex">
-				<div class="texticonfiltre bordericon">
-					<div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-money-bill-wave"></i></div>
-					<div class="filtretexte">Économique</div>
-				</div>
-				<div class="texticonfiltre bordericon">
-					<div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-child-reaching"></i></div>
-					<div class="filtretexte">Familial</div>
-				</div>
-			</div>
-			<div class="flex responsive">
-        <div class="texticonfiltre bordericon">
-				  <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-heart"></i></div>
-				  <div class="filtretexte">Romantique</div>
-			  </div>
-			  <div class="texticonfiltre bordericonAA">
-				  <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-dog"></i></div>
-				  <div class=" filtretexte"> Animaux autorisés</div>
-			  </div>
-      </div>
-		</div>
-	</section>
-	<div class="info">
-		<div class="infoicon"><i class="fa-solid fa-info"></i></div>
-		<p>Plus de 500 logements sont disponibles dans cette ville</p>
-	</div>
-	<!--construction des differentes cartes hebergement a Marseille-->
-	<section>
-		<div class="grandblocsection">
-			<div class="sizeheberg backgroundgray"><!--Ce div est le div principale qui contient les 6 cartes.-->
-				<h3 class="titreheberg" id="HébergementàMarseille">Hébergements à Marseille</h3>
-				<div class="flexbetween bloc1hebergement"><!--Ce div est va contenir les 3 premieres cartes qui  va nous permettre d'appliquer Flexbox-->
-					<a class="bordercard nodecocard" href="#"><!--div qui contient la premiere carte-->
-						<div><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="imgdimension"/></div>
-            <div class="des des1">
-              <h4>Auberge La Cannebière</h4>
-						  <p>nuit à partir de 25<strong>€</strong></p>
-						  <p>
-							  <i class="fa-solid fa-star bluestar"></i>
-							  <i class="fa-solid fa-star bluestar"></i>
-							  <i class="fa-solid fa-star bluestar"></i>
-						  	<i class="fa-solid fa-star bluestar"></i>
-						  	<i class="fa-solid fa-star graystar"></i>
-						  </p>
+    </header>
+    <main id="main-content">
+        <div class="titre">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <div class="slogan"><p>En plein centre ville ou en pleine nature</p></div>
+        </div>
+        <!--zone de recherche-->
+        <div class="recherche">
+          <i class=" iconsize fa-solid fa-location-dot"></i>
+          <form method="post" action="traitement.php">
+            <input type="search" placeholder="Marseille, France" />
+          </form> 
+          <button>Rechercher</button>
+          <i class="fas fa-search"></i>
+        </div>
+      </section>
+      <section>
+        <!--commencement de la partie filtre-->
+        <div class="sizefiltre">
+          <h3 class="filtremarginh1">Filtres</h3>
+          <div class="filtre-1">
+            <div class="texticonfiltre bordericon">
+              <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-money-bill-wave"></i></div>
+              <div class="filtretexte">Économique</div>
             </div>
-					</a>
-					<a class="bordercard nodecocard" href="#">
-						<div><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="imgdimension"/></div>
-						<div class="des">
-              <h4>Hôtel du port</h4>
-						  <p>nuit à partir de 52<strong>€</strong></p>
-						  <p class="bluestar">
-						    <i class="fa-solid fa-star"></i>
-						  	<i class="fa-solid fa-star"></i>
-						  	<i class="fa-solid fa-star"></i>
-						  	<i class="fa-solid fa-star"></i>
-						  	<i class="fa-solid fa-star"></i>
-	  				  </p>
+            <div class="texticonfiltre bordericon">
+              <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-child-reaching"></i></div>
+              <div class="filtretexte">Familial</div>
             </div>
-					</a>
-					<a class="bordercard nodecocard" href="#">
-						<div><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" class="imgdimension"/></div>
-						<div class="des">
-              <h4> Hôtel les mouettes</h4>
-							<p>nuit à partir de 76<strong>€</strong></p>
-							<p>
-								<i class="fa-solid fa-star bluestar"></i>
-								<i class="fa-solid fa-star bluestar"></i>
-								<i class="fa-solid fa-star bluestar"></i>
-								<i class="fa-solid fa-star bluestar"></i>
-								<i class="fa-solid fa-star graystar"></i>
-							</p>
+          </div>
+          <div class="filtre-2">
+            <div class="texticonfiltre bordericon">
+              <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-heart"></i></div>
+              <div class="filtretexte">Romantique</div>
             </div>
-					</a>
-				</div>
-				<div class="flexbetween bloc2hebergement"><!--Ce div est va contenir les 3 dernieres cartes qui  va nous permettre d'appliquer Flexbox-->
-					<a class="bordercard nodecocard" href="#"><!--div de la premiere carte, du deuxieme bloc-->
-						<div><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtelde la mer" class="imgdimension "/></div>
-						<div class="des">
-              <h4>Hôtel de la mer</h4>
-						  <p>nuit à partir de 46<strong>€</strong></p>
-						  <p>
-							  <i class="fa-solid fa-star bluestar"></i>
-							  <i class="fa-solid fa-star bluestar"></i>
-							  <i class="fa-solid fa-star bluestar"></i>
-							  <i class="fa-solid fa-star graystar"></i>
-							  <i class="fa-solid fa-star graystar"></i>
-							</p>
+            <div class="texticonfiltre bordericonAA">
+              <div class="colorblue flexcenter iconfiltre"><i class="fa-solid fa-dog"></i></div>
+              <div class="filtretexte">Animaux autorisés</div>
             </div>
-					</a>
-					<a class="bordercard nodecocard" href="#">
-						<div><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier" class="imgdimension"/></div>
-							<div class="des">
-                <h4>Auberge le panier</h4>
-							  <p>nuit à partir de 23<strong>€</strong></p>
-							  <p>
-							  	<i class="fa-solid fa-star bluestar"></i>
-							  	<i class="fa-solid fa-star bluestar"></i>
-							  	<i class="fa-solid fa-star bluestar"></i>
-							  	<i class="fa-solid fa-star bluestar"></i>
-							  	<i class="fa-solid fa-star graystar"></i>
-						  	</p>
+          </div>
+        </div>
+      </section>
+      <div class="info">
+        <div class="infoicon"><i class="fa-solid fa-info"></i></div>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div><!--construction des differentes cartes hebergement a Marseille-->
+      <section>
+        <div class="grandblocsection">
+          <div class="sizeheberg backgroundgray">
+            <!--Ce div est le div principale qui contient les 6 cartes.-->
+            <h3 class="titreheberg" id="HébergementàMarseille">Hébergements à Marseille</h3>
+            <div class="flexbetween bloc1hebergement">
+              <!--Ce div est va contenir les 3 premieres cartes qui  va nous permettre d'appliquer Flexbox-->
+              <a class="bordercard nodecocard" href="#"><!--div qui contient la premiere carte-->
+                <div><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="imgdimension" /></div>
+                <div class="des des1">
+                  <h4>Auberge La Cannebière</h4>
+                  <p>nuit à partir de 25<strong>€</strong></p>
+                  <p>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star graystar"></i>
+                  </p>
+                </div>
+              </a>
+              <a class="bordercard nodecocard" href="#">
+                <div><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" class="imgdimension" /></div>
+                <div class="des">
+                  <h4>Hôtel du port</h4>
+                  <p>nuit à partir de 52<strong>€</strong></p>
+                  <p class="bluestar">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+              </a>
+              <a class="bordercard nodecocard" href="#">
+                <div><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes" class="imgdimension" /></div>
+                <div class="des">
+                  <h4>Hôtel les mouettes</h4>
+                  <p>nuit à partir de 76<strong>€</strong></p>
+                  <p>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star graystar"></i>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="flexbetween bloc2hebergement">
+              <!--Ce div est va contenir les 3 dernieres cartes qui  va nous permettre d'appliquer Flexbox-->
+              <a class="bordercard nodecocard" href="#"><!--div de la premiere carte, du deuxieme bloc-->
+                <div><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtelde la mer" class="imgdimension" /></div>
+                <div class="des">
+                  <h4>Hôtel de la mer</h4>
+                  <p>nuit à partir de 46<strong>€</strong></p>
+                  <p>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star graystar"></i>
+                    <i class="fa-solid fa-star graystar"></i>
+                  </p>
+                </div>
+              </a>
+              <a class="bordercard nodecocard" href="#">
+                <div><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier" class="imgdimension" /></div>
+                <div class="des">
+                  <h4>Auberge le panier</h4>
+                  <p>nuit à partir de 23<strong>€</strong></p>
+                  <p>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star bluestar"></i>
+                    <i class="fa-solid fa-star graystar"></i>
+                  </p>
+                </div>
+              </a>
+              <a class="bordercard nodecocard" href="#">
+                <div><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" class="imgdimension" /></div>
+                <div class="des">
+                  <h4>Hôtel chez Amina</h4>
+                  <p>nuit à partir de 96<strong>€</strong></p>
+                  <p class="bluestar">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </p>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="bold nodecolink">Afficher plus</a>
+          </div>
+          <div class="sizepopu backgroundgray"><!--Commencement du div de la partie les plus populaires 3 grandes cartes-->
+            <div class="flexbetween titremargpopu">
+              <h3>Les plus populaires</h3>
+              <div><i class="fa-solid fa-star"></i></div>
+            </div>
+            <a class="bordercardpopu nodecocard" href="#">
+              <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" class="imgdimension1" />
+              <div class="carddetailspopu">
+                <h4>Hôtel le soleil du<br />matin</h4>
+                <p>nuit à partir de 128<strong>€</strong></p>
+                <div class="bluestar starpopu">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
-					</a>
-					<a class="bordercard nodecocard" href="#">
-						<div><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" class="imgdimension"/></div>
-						<div class="des">	
-              <h4> Hôtel chez Amina</h4>
-							<p>nuit à partir de 96<strong>€</strong></p>
-							<p class="bluestar">
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-								<i class="fa-solid fa-star"></i>
-							  <i class="fa-solid fa-star"></i>
-							</p>
+            </a>
+            <a class="cardpopumarg bordercardpopu nodecocard" href="#">
+              <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" class="imgdimension1" />
+              <div class="carddetailspopu">
+                <h4>Au coeur de l'eau chambres d'hôtes</h4>
+                <p>nuit à partir de 71<strong>€</strong></p>
+                <div class="starpopu">
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star graystar"></i>
+                </div>
+              </div>
+            </a>
+            <a class="bordercardpopu nodecocard" href="#">
+              <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Hôtel tout bleu et blanc" class="imgdimension1" />
+              <div class="carddetailspopu">
+                <h4>Hôtel tout bleu et<br />blanc</h4>
+                <p>nuit à partir de 68<strong>€</strong></p>
+                <div class="starpopu">
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star bluestar"></i>
+                  <i class="fa-solid fa-star graystar"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div><!--Fin du grand bloc Hebergement-->
+      </section>
+      <section><!--la partie activités a Marseille commence ici-->
+        <h3 class="titreactivite" id="AcitivitésàMarseille">Acitivités à Marseille</h3>
+        <div class="blocactivite"><!--div principal qui contient les 6 cartes a savoir les deux plus grandes et quatres plus petites-->
+          <div class="bloc12activite marginactivite1">
+            <a class="bordercardactivite nodecocard" href="#"><!--Plus grande carte-->
+              <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux Port" class="imgactivite1" />
+              <div class="detailsactivite"><h4>Vieux Port</h4></div>
+            </a>
+            <div class="bloc12activite flexcolumnbetween"><!--Ce bloc contient les deux plus petites cartes-->
+              <a class="bordercardactivite2 nodecocard" href="#"><!--Ce div va nous permettre de construire le contour de la Carte-->
+                <div><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="imgactivite2" /></div>
+                <div class="detailsactivite"><h4>Fort de Pomègues</h4></div>
+              </a>
+              <a class="bordercardactivite3 nodecocard" href="#">
+                <div><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="imgactivite3" /></div>
+                <div class="detailsactivite detailsactivitetablette"><h4>Îles du Frioul</h4></div>
+              </a>
             </div>
-					</a>
-				</div>
-				<a href="#" class="bold nodecolink">Afficher plus</a>
-			</div>
-			<div class="sizepopu backgroundgray"> <!--Commencement du div de la partie les plus populaires 3 grandes cartes-->
-				<div class="flexbetween titremargpopu">
-					<h3>Les plus populaires</h3>
-					<div><i class="fa-solid fa-star"></i></div>
+          </div>
+          <div class="bloc12activite marginactivite2">
+            <a class="bordercardactivite nodecocard" href="#">
+              <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="imgactivite1" />
+              <div class="detailsactivite"><h4>Parc National des Calanques</h4></div>
+            </a>
+            <div class="bloc12activite flexcolumnbetween">
+              <a class="bordercardactivite3 nodecocard" href="#">
+                <div><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="imgactivite3" /></div>
+                <div class="detailsactivite detailsactivitetablette"><h4>Notre-Dame-de-la-Garde</h4></div>
+              </a>
+              <a class="bordercardactivite2 nodecocard" href="#">
+                <div><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="imgactivite2" /></div>
+                <div class="detailsactivite"><h4>Parc Longchamp</h4></div>
+              </a>
+            </div>
+          </div>
         </div>
-        <a class="bordercardpopu nodecocard" href="#">
-          <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel le soleil du matin" class="imgdimension1"/>
-          <div class="carddetailspopu">
-						<h4>Hôtel le soleil du<br/>matin</h4>
-         	  <p>nuit à partir de 128<strong>€</strong></p>
-        		<div class="bluestar starpopu">
-            	<i class="fa-solid fa-star"></i>
-          		<i class="fa-solid fa-star"></i>
-          		<i class="fa-solid fa-star"></i>
-          		<i class="fa-solid fa-star"></i>
-            	<i class="fa-solid fa-star"></i>
-          	</div>
-					</div>
-        </a>
-        <a class="cardpopumarg bordercardpopu nodecocard" href="#">
-          <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau chambres d'hôtes" class="imgdimension1"/>
-          <div class="carddetailspopu">
-            <h4>Au coeur de l'eau chambres d'hôtes</h4>
-            <p>nuit à partir de 71<strong>€</strong></p>
-         	 <div class="starpopu">
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star graystar"></i>
-          	</div>
-					</div>
-        </a> 
-        <a class="bordercardpopu nodecocard" href="#">
-          <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Hôtel tout bleu et blanc" class="imgdimension2"/>
-          <div class="carddetailspopu">
-            <h4>Hôtel tout bleu et<br/>blanc</h4>
-            <p>nuit à partir de 68<strong>€</strong></p>
-          	<div class="starpopu">
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star bluestar"></i>
-            	<i class="fa-solid fa-star graystar"></i>
-          	</div>
-					</div>
-        </a> 
+      </section>
+    </main>
+    <footer>
+      <div class="footback">
+        <div class="foot">
+          <div class="footmobile">
+            <h2>A propos</h2>
+            <br />
+            <ul>
+              <li>fontionnement du site</li>
+              <li>Condition générale de vente</li>
+              <li>Données et confidentialité</li>
+            </ul>
+          </div>
+          <div class="footmobile paddinfoot">
+            <h2>Nos hébergements</h2>
+            <br />
+            <ul>
+              <li>Charte qualité</li>
+              <li>Soumettre votre hotêl</li>
+            </ul>
+          </div>
+          <div class="footmobile marginfoot2">
+            <h2>Assisstance</h2>
+            <br />
+            <ul>
+              <li>Centre d'aide</li>
+              <li>Nous contacter</li>
+            </ul>
+          </div>
+        </div>
       </div>
-		</div><!--Fin du grand bloc Hebergement-->
-	</section>
-  <section><!--la partie activités a Marseille commence ici-->
-		<h3 class="titreactivite" id="AcitivitésàMarseille">Acitivités à Marseille</h3> 
-		<div class="blocactivite"> <!--div principal qui contient les 6 cartes a savoir les deux plus grandes et quatres plus petites-->
-			<div class="bloc12activite marginactivite1">
-				<a class="bordercardactivite nodecocard" href="#"><!--Plus grande carte-->
-					<img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="vieux Port" class="imgactivite1"/>
-					<div class="detailsactivite"><h4>Vieux Port</h4></div>
-				</a>
-				<div class="bloc12activite flexcolumnbetween"> <!--Ce bloc contient les deux plus petites cartes-->
-					<a class="bordercardactivite2 nodecocard" href="#"><!--Ce div va nous permettre de construire le contour de la Carte--> 
-						<div><img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" class="imgactivite2"/></div>
-						<div class="detailsactivite"><h4>Fort de Pomègues</h4></div>
-					</a>
-					<a class="bordercardactivite3 nodecocard" href="#">
-						<div><img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="imgactivite3"/></div>
-						<div class="detailsactivite detailsactivitetablette"><h4>Îles du Frioul</h4></div>
-					</a>
-        </div>
-			</div>
-			<div class="bloc12activite marginactivite2">
-				<a class="bordercardactivite nodecocard" href="#">
-					<img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" class="imgactivite1"/>
-					<div class="detailsactivite"><h4>Parc National des Calanques</h4></div>
-				</a>
-				<div class="bloc12activite flexcolumnbetween">
-					<a class="bordercardactivite3 nodecocard" href="#">
-						<div><img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" class="imgactivite3"/></div>
-						<div class="detailsactivite detailsactivitetablette"><h4>Notre-Dame-de-la-Garde</h4></div>
-					</a>
-					<a class="bordercardactivite2 nodecocard" href="#">
-						<div><img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="imgactivite2"/></div>
-						<div class="detailsactivite"><h4>Parc Longchamp</h4></div>
-					</a>
-        </div>
-			</div>
-    </div>
-  </section>
-		<footer>
-			<div class="footback">
-				<div class="foot">
-					<div class="footmobile">
-						<h2>A propos</h2><br/>
-          	<ul>
-							<li>fontionnement du site</li>
-							<li>Condition générale de vente</li>
-							<li>Données et confidentialité</li>
-						</ul>
-					</div>
-					<div class="footmobile paddinfoot">
-						<h2>Nos hébergements</h2><br />
-						<ul>
-							<li>Charte qualité</li>
-							<li>Soumettre votre hotêl</li>
-						</ul>
-					</div>
-					<div class="footmobile marginfoot2">
-						<h2>Assisstance</h2><br/>
-						<ul>
-							<li>Centre d'aide</li>
-							<li>Nous contacter</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</body>
+    </footer>
+  </body>
 </html>

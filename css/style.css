@@ -1,6 +1,7 @@
-body{
+html, body{
 
     width: 100%;
+    height: auto;
     overflow-x: hidden;
     
 }
@@ -51,22 +52,12 @@ li {
     justify-content: space-between;
     flex-direction: column;
 }
-/*Ensemble de style apliquer au header*/
-.iconsize {
-    border-radius: 10px 0 0 10px;
-    height: 54px;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-}
-
 .head {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    width: 100%;
-    margin-left: 60px;
+    width: 95%;
+    margin-left: 50px;
     margin-right: 50px;
     margin-top: 30px;
 }
@@ -94,9 +85,12 @@ li {
     background-color: #0065fc;
 }
 .titre {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
     margin-left: 50px;
-    line-height: 30px;
+    
 }
 .decoration {
     text-decoration: none;
@@ -114,7 +108,6 @@ li {
     padding-left: 62px;
     padding-right: 62px;
     padding-bottom: 20px;
-    margin-right: 50px;
 }
 .nodecocard{
     text-decoration: none;
@@ -141,22 +134,6 @@ li {
 }
 /*fin du header*/
 
-.recherche {
-    height: 50px;
-    width: 100%;
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    padding-left: 20px;
-}
-
-.buttonsearch {
-    height: 54px;
-    width: 120px;
-    border-radius: 0 10px 10px 0;
-    color: white;
-    cursor: pointer;
-}
 .texticonfiltre:hover>.textefiltre
 /*changement d’apparence au survol.(Icone et Texte)*/
     {
@@ -166,24 +143,55 @@ li {
     color: white;
     background-color: #0065fc;
 }
-.search {
+/*zone de recherche*/
+.recherche{
     display: flex;
-    width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     margin-left: 50px;
+}
+.iconsize{
+    padding: 22px;
+    background-color: #f2f2f2;
+    border-radius: 20PX 0 0 20px;
+    font-size: 18px;
+}
+.recherche input{
+    padding-left: 15px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-right: 40px;
+    border: 1px solid #f2f2f2;
+}
+.recherche input::placeholder{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.recherche button{
+    background-color: #0065fc;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 0 20px 20px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: none;
+    cursor: pointer;
 }
 /*Filtre*/
 .sizefiltre{
-    width: 100%;
+    width: 95%;
     height: auto;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     margin-bottom: 30px;
     margin-left: 50px;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
+}
+.filtre-1{
+    display: flex;
+}
+.filtre-2{
+    display: flex;
 }
 .texticonfiltre {
     display: flex;
@@ -219,20 +227,21 @@ li {
 }
 
 .iconfiltre {
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    background-color: #deebff;
-    margin-left: -2px;
-    margin-right: 10px;
 
+    background-color: #deebff;
+    padding: 16px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: -2px;
 }
 
 .info{
     display: flex;
-    width: 100%;
     align-items: center;
+    padding: 0;
     margin-left: 50px;
+    overflow-x: hidden;
 }
 .infoicon {
     /*cette partie comprrend l'icone inforomation*/
@@ -355,7 +364,7 @@ li {
     border-radius: 15px 0 0 15px;
     margin: 1px
 }
-.imgdimension2 {
+.imgdimensionpopu2 {
     height: 130px;
     width: 170px;
     object-fit: cover;
@@ -515,32 +524,36 @@ margin-right: 25px;
 .footback{
     background-color: #f2f2f2;
 }
-@media screen and (max-width: 1020px) and (min-width: 992px){ /*Responsive Desktop*/
-    .sizefiltre{
-        font-size: 11.9px;
-        }
-    }
 @media screen and (max-width: 1020px){
     .des1{
         margin: 5px;
     line-height: 15px;
     }
+    }
+@media screen and (max-width: 1016px) and (min-width: 992px){
+    .bordericon{
+        margin-left: 9px;
+    }
+    .bordericonAA{
+        margin-left: 9px;
+    }
+    .filtremarginh1{
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1010px) and (min-width: 992px){
     .carddetailspopu{
         font-size: 11.9px;
-
+            }
     }
-    }
-@media screen and (max-width: 991px) and (min-width: 768px){
-
+    @media screen and (max-width: 991px) and (min-width: 768px){
     .texticonfiltre{
         margin-bottom: 20px;
     }
     .sizefiltre{
-        Display: inline-block;
-        width: 100%;
-        margin-left: 50px;
-        font-size: large;
-        }
+        display: inline-block;
+    }
     .grandblocsection {
         display: flex;
         margin-top: 40px;
@@ -587,7 +600,6 @@ margin-right: 25px;
     .nodeco {
         padding-left: 71px;
     }
-
     .bloc1 {
         flex-direction: column;
     }
@@ -605,7 +617,6 @@ margin-right: 25px;
         display: block;
         width: 100%;
         margin-bottom: 40px;
-
     }
     .bordercardactivite3 {
         height: 200px;
@@ -626,10 +637,18 @@ margin-right: 25px;
       background-color: inherit;
     }
     .foot{
-        margin-bottom: 20px;
+    margin-top: 0;
+    margin-right: 0;
     position: relative;
-    top: 150px;
-    width: 80%;
+    top: 250px;
+    width: 675px;
+    height: auto;
+}
+.paddingfoot{
+    padding: 0;
+}
+.marginfoot2{
+    margin-bottom: 20px;
 }
 }
 /*la partie Responsive pour la version Mobile*/
@@ -637,7 +656,6 @@ margin-right: 25px;
     body{
         margin: 0;
     }
-    
     .logo {
         align-items: center;
         justify-content: center;
@@ -646,23 +664,21 @@ margin-right: 25px;
         margin-bottom: 20px;
     }
     .head {
+        width: 100%;
         display: block;
         justify-content: space-between;
         padding-bottom: 20px;
         border-bottom: 2px solid #f2f2f2;
+        margin-right: 0;
         margin-left: 0;
-        font-size: xx-large;
-        margin-top: 100px;
+        margin-top: 50px;
     }
     h1 {
-        width: 90%;
+        width: 100%;
         margin-top: 60px;
         margin-bottom: 30px;
-        line-height: 50px;
-        font-size: xx-large;
     }
     .slogan{
-        font-size: 30px;
         margin-bottom: 50px;
     }
     .bar {
@@ -673,54 +689,30 @@ margin-right: 25px;
         border-top: transparent;
         border-bottom: solid 2px blue;
     }
-    .search{
-        font-size: xx-large;
-    }
-    .iconsize{
-        width: 70px;
-        height: auto;
-    }
-    .responsive {
-        display: block;
-    }
-    .loupe {
-        display: inherit;
-    }
-    .hide {
-        display: none;
-    }
-    .recherche {
-        height: 60px;
-        width: 500px;
-        font-size: 30px;
-        color: black;
-        font-weight: bold;
-    }
-    .buttonsearch {
-        height: 65px;
-        width: 60px;
-        border-radius: 17px;
-        color: white;
-        cursor: pointer;
-        margin-left: -22px;
-    }
     .sizefiltre {
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
-        font-size: 40px;
+        margin-left: 30px;
+
+    }
+    .filtre-1{
+        display: flex;
+        width: 70%;
+    }
+    .filtre-2{
+        display: block;
+
     }
     .info {
         display: flex;
         width: 90%;
-        font-size: xx-large;
         margin-top: 20px;
     }
     .infoicon{
         width: 50px;
         height: 50px;
         border-radius: 100%;
-        font-size: xx-large;
     }
     .bordericon {
         width: 300px;
@@ -730,21 +722,19 @@ margin-right: 25px;
     .bordericonAA{
         width: 300px;
         height: 60px;
-        font-size: 32px;
     }
     .filtretexte{
         width: 100%;
     }
     .iconfiltre{
-        height: 60px;
-        width: 60px;
-        border-radius: 30px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
     }
     .des{
         margin-left: 20px;
         margin-bottom: 10px;
-        font-size: larger;
-        height: 90px;
+        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -786,18 +776,11 @@ margin-right: 25px;
     }
     .imgdimension1 {
         width: 50%;
-        height: 220px;
-        margin-left: 5px;
-        border-radius: 40px 0 0 40px;
-    }
-    .imgdimension2{
-        width: 50%;
-        height: 220px;
+        height: 290px;
         margin-left: 5px;
         border-radius: 40px 0 0 40px;
     }
     .carddetailspopu{
-        font-size: larger;
         line-height: 25px;
         width: 50%;
         height: 200px;
@@ -834,25 +817,11 @@ margin-right: 25px;
         margin: 0;
         padding: 0;
     }
-    .bordercard{
-        width: 100%;
-        margin: 0;
-        padding-right: 5px;
-        height: 300px;
-        margin-bottom: 40px;
-        font-size: larger;
-        line-height: 50px;
-        border-radius: 40px;
-    }
     .nodecolink{
-        font-size: xx-large;
         padding-top: 0;
         margin: 0;
     }
     
-    .titreactivite {
-        font-size: xx-large; 
-    }
     .blocactivite{
         width: auto;
         height: 2050px;
@@ -866,50 +835,32 @@ margin-right: 25px;
         margin: 0;
         padding: 0;
     }
-    .bordercardactivite {
-        width: 100%;
-        height: 300px;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 40px;
-        font-size: x-large;
-        border-radius: 40px;
-    }
-    .bordercardactivite2 {
-        width: 100%;
-        height: 300px;
-        margin: 0;
-        padding: 0;
-        margin-bottom: 40px;
-        font-size: x-large;
-        border-radius: 40px;
-    }
+    .bordercardpopu,
+    .bordercard,
+    .bordercardactivite,
+    .bordercardactivite2,
     .bordercardactivite3 {
         width: 100%;
         height: 300px;
         margin: 0;
-        margin-bottom: 40px;
         padding: 0;
-        font-size: x-large;
+        margin-bottom: 40px;
         border-radius: 40px;
     }
     .detailsactivite{
         padding-left: 20px;
     }
-    .bloc1marg {
+    .bloc1marg,
+    .bloc2marg {
         margin-bottom: 0px;
         width: 100%;
         margin-top: 13px;
         display: flex;
         flex-direction: column;
     }
-    .bloc2marg {
-        margin-bottom: 0px;
-        width: 100%;
-        margin-top: 13px;
-        flex-direction: column;
-    }
-    .imgactivite1 {
+    .imgactivite1,
+    .imgactivite2,
+    .imgactivite3 {
         height: 200px;
         width: 100%;
         object-fit: cover;
@@ -917,32 +868,15 @@ margin-right: 25px;
         border-radius: 40px 40px 0 0;
         margin: 2px;
     }
-    .imgactivite2 {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        border-radius: 40px 40px 0 0;
-        margin: 2px;
-    }
-    .imgactivite3 {
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
-        background-position: center;
-        border-radius: 40px 40px 0 0;
-        margin: 2px;
-    }
     .marginactivite1{
         margin-right: 0;
-        
-        }
-        .marginactivite2{
-            margin-left: 0;
-        }
+    }
+    .marginactivite2{
+    margin-left: 0;
+   }
     .bloc1 {
-        display: flex;
-        flex-direction: column;
+    display: flex;
+    flex-direction: column;
     }
     .foot {
         width: 100%;
@@ -953,7 +887,6 @@ margin-right: 25px;
         margin-left: 50px;
         margin-top: 50px;
     }
-
 }
 @media screen and (max-width: 700px){
     .search{
@@ -961,8 +894,8 @@ margin-right: 25px;
         font-size: 50px;
     }
 }
-@media screen and (max-width: 375px)  {
-    body{
-        font-size: 25px;
+@media screen and (max-width: 500px){
+    .logo{
+        padding-left: 41%;
     }
 }
