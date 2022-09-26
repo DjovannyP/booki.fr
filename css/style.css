@@ -1,9 +1,7 @@
-html, body{
-
+html, body{ 
     width: 100%;
     height: auto;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
 }
 * {
     margin: 0;
@@ -11,36 +9,24 @@ html, body{
     font-family: Raleway, Arial, Helvetica, sans-serif;
     box-sizing: content-box;
     box-sizing: content-box;
-}
-
-/*listes des proprietes css generales a l'ensemble de la page*/
-
+}   
+/*Ensemble de classe susceptible d'être appliquer à plusieurs élements de la page*/
 .bold {
     font-weight: bold;
 }
-
 li {
     list-style-type: none;
-
 }
-
 .flexaround {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .flexbetween {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .flexcenter {
     display: flex;
     justify-content: center;
@@ -51,22 +37,6 @@ li {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}
-.head {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width: 95%;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 30px;
-}
-.loupe {
-    display: none;
-}
-.bordernone {
-    /*cette classe nous a permis de suprrimer le border de l'input*/
-    border: none;
 }
 .colorblue {
     color: #0065fc;
@@ -84,13 +54,27 @@ li {
 .backgroundblue {
     background-color: #0065fc;
 }
+.nodecocard{
+    text-decoration: none;
+    color: black;
+}
+/*Header*/
+.head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 95%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+}
 .titre {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 70px;
     margin-left: 50px;
-    
+    width: 100%;
 }
 .decoration {
     text-decoration: none;
@@ -108,10 +92,6 @@ li {
     padding-left: 62px;
     padding-right: 62px;
     padding-bottom: 20px;
-}
-.nodecocard{
-    text-decoration: none;
-    color: black;
 }
 .nodecolink{
     text-decoration: none;
@@ -145,6 +125,8 @@ li {
 }
 /*zone de recherche*/
 .recherche{
+    width: 80%;
+    overflow: hidden;
     display: flex;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -162,6 +144,7 @@ li {
     padding-bottom: 22px;
     padding-right: 40px;
     border: 1px solid #f2f2f2;
+    overflow: auto;
 }
 .recherche input::placeholder{
     font-weight: bolder;
@@ -178,6 +161,9 @@ li {
     border: none;
     cursor: pointer;
 }
+    .loupe{
+        display: none;
+    }
 /*Filtre*/
 .sizefiltre{
     width: 95%;
@@ -285,21 +271,19 @@ li {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 .bordercard:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
-
 .des {
     /*marge des differentes description de chaque cartes*/
     width: 100%;
-    display: inline-block;
-    height: 60px;
-    margin-left: 10px;
+    display: block;
+    justify-content: space-between;
     line-height: 20px;
+    height: 65px;
+    margin-left: 10px;
 }
-
 .sizeheberg {
     /*taille du premier bloc qui fait deux fois la taille du segond*/
     height: 620px;
@@ -313,7 +297,6 @@ li {
     margin-top: 40px;
     margin-left: 15px;
 }
-
 .grandblocsection {
     width: auto;
     display: flex;
@@ -323,6 +306,7 @@ li {
 .sizepopu {
     height: 620px;
     margin-left: 10px;
+    margin-bottom: 30px;
     flex: 1;
     border-radius: 15px;
     display: flex;
@@ -355,31 +339,28 @@ li {
     margin-top: 20px;
     margin-bottom: 10px;
     width: 85%;
+    font-size: large;
 }
 .imgdimension1 { /*Cette classe represente la taille des images dans la partie les plus populaires*/  
-    height: 130px;
-    width: 120px;
+    height: 125px;
+    width: 150px;
     object-fit: cover;
     background-position: center;
     border-radius: 15px 0 0 15px;
     margin: 1px
 }
-.imgdimensionpopu2 {
-    height: 130px;
-    width: 170px;
+.imgdimension1-1{ 
+    height: 125px;
+    width: 190px;
     object-fit: cover;
     background-position: center;
     border-radius: 15px 0 0 15px;
     margin: 1px;
-    position: relative;
-    max-width: max-content;
-    
 }
 .carddetailspopu {
-    width: 80%;
-    height: auto;
+    width: 200px;
+    display: inline-block;
     padding-left: 5%;
-    line-height: 15px;
 }
 .starpopu {
     margin-top: 35px;
@@ -510,6 +491,7 @@ margin-right: 25px;
 /*les proprietes CSS relatives au footer*/
 .foot {
     height: 310px;
+    font-size: medium;
     margin-top: 54px;
     margin-left: 50px;
     display: flex;
@@ -524,10 +506,12 @@ margin-right: 25px;
 .footback{
     background-color: #f2f2f2;
 }
-@media screen and (max-width: 1020px){
-    .des1{
-        margin: 5px;
-    line-height: 15px;
+@media screen and (max-width: 1170px){
+    .sizepopu{
+        width: 30%;
+    }
+    .imgdimension1{
+        width: 	120px;
     }
     }
 @media screen and (max-width: 1016px) and (min-width: 992px){
@@ -548,6 +532,14 @@ margin-right: 25px;
             }
     }
     @media screen and (max-width: 991px) and (min-width: 768px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+
+    body{
+        overflow-y: auto;
+
+    }
     .texticonfiltre{
         margin-bottom: 20px;
     }
@@ -589,6 +581,9 @@ margin-right: 25px;
         background-color: inherit;
         margin: 0;
     }
+    .imgdimension1-1{
+        width: 180px;
+    }
     .bloc1marg {
         margin-bottom: 20px;
         margin-top: 20px;
@@ -624,13 +619,7 @@ margin-right: 25px;
         display: block;
         margin-bottom: 40px;
     }
-    .imgactivite1{
-        height: 130px;
-    }
-    .imgactivite2{
-        height: 130px;
-    }
-    .imgactivite3{
+    .imgactivite1, .imgactivite2, .imgactivite3{
         height: 130px;
     }
     .footback{
@@ -653,14 +642,15 @@ margin-right: 25px;
 }
 /*la partie Responsive pour la version Mobile*/
 @media screen and (max-width: 767px){
-    body{
+    html, body{
+        height: auto;
         margin: 0;
     }
     .logo {
         align-items: center;
         justify-content: center;
         padding-right: 50%;
-        padding-left: 45%;
+        padding-left: 40%;
         margin-bottom: 20px;
     }
     .head {
@@ -673,13 +663,12 @@ margin-right: 25px;
         margin-left: 0;
         margin-top: 50px;
     }
-    h1 {
-        width: 100%;
+    .titre {
+        width: 90%;
         margin-top: 60px;
         margin-bottom: 30px;
-    }
-    .slogan{
-        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .bar {
         border-bottom: solid 2px transparent;
@@ -688,6 +677,21 @@ margin-right: 25px;
     .bar:hover {
         border-top: transparent;
         border-bottom: solid 2px blue;
+    }
+    .recherche-texte{
+        display: none;
+    }
+    .recherche{
+        margin-left: 30px;
+        margin-right: 0;
+    }
+    .recherche input{
+      padding-left: 20px;
+      padding-right: 0;
+      overflow: hidden;
+    }
+    .loupe{
+        display: inline;
     }
     .sizefiltre {
         width: 100%;
@@ -701,40 +705,42 @@ margin-right: 25px;
         width: 70%;
     }
     .filtre-2{
-        display: block;
-
+        display: inline-block;
+        width: 50%;
     }
-    .info {
-        display: flex;
-        width: 90%;
-        margin-top: 20px;
-    }
-    .infoicon{
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
+    .filtremarginh1{
+        margin-right: 0;
+        margin-left: 20px;
     }
     .bordericon {
-        width: 300px;
+        width: 200px;
         height: 60px;
         margin-bottom: 25px;
     }
     .bordericonAA{
-        width: 300px;
+        width: 220px;
         height: 60px;
     }
     .filtretexte{
         width: 100%;
     }
     .iconfiltre{
-        height: 32px;
-        width: 32px;
+        height: 28px;
+        width: 40px;
+        border-radius: 50%;
+    }
+    .info{
+        width: 87%;
+    }
+    .infoicon{
+        width: 40px;
+        height: 30px;
         border-radius: 50%;
     }
     .des{
+        font-size: large;
+        height: 80px;
         margin-left: 20px;
-        margin-bottom: 10px;
-        height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -744,19 +750,31 @@ margin-right: 25px;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     .titremargpopu {  
         width: 100%;
-        font-size: 25px;
         margin: 0;
         margin-bottom: 20px;
     }
     .sizepopu{
         width: 100%;
-        margin: 0;
-        padding: 55px;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-top: 20px;
+        margin-left: 0;
         justify-content: center;
         align-items: center;
+    }
+    .carddetailspopu{
+        margin-right: 10px;
+        width: 68%;
+        display: flex;
+        height: 150px;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: large;
     }
     .bordercardpopu {
         width: 100%;
@@ -764,35 +782,32 @@ margin-right: 25px;
         background-color: white;
         box-shadow: 0 0 15px #0000002e;
         border-radius: 40px;
-        font-size: 20px;
-
     }
     .imgdimension{
         width: 99%;
-        height: 170px;
+        height: 180px;
         margin: 5px;
+        padding: 0;
         border-radius: 40px 40px 0 0;
+        margin-bottom: 20px;
         
     }
     .imgdimension1 {
         width: 50%;
-        height: 290px;
-        margin-left: 5px;
+        margin-right: 100px;
+        height: 220px;
+        margin-right: 5px;
         border-radius: 40px 0 0 40px;
     }
-    .carddetailspopu{
-        line-height: 25px;
-        width: 50%;
-        height: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+    .imgdimension1-1{
+        height: 220px;
+        width: 410px;
+        margin: 5px;
+        border-radius: 40px 0 0 40px;
+     }
     .titreheberg{
-        font-size: 25px;
         margin-left: 0;
-        margin-top: 60px;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         display: flex;
         flex-direction: column;
     }
@@ -802,7 +817,6 @@ margin-right: 25px;
         background-color:inherit;
         margin: 0;
         width: 100%;
-
     }
     .bloc1hebergement{
         display: flex;
@@ -818,16 +832,18 @@ margin-right: 25px;
         padding: 0;
     }
     .nodecolink{
+        font-size: large;
         padding-top: 0;
         margin: 0;
     }
-    
+    .titreactivite{
+        margin-left: 30px;
+    }
     .blocactivite{
         width: auto;
-        height: 2050px;
+        height: 2040px;
         flex-direction: column;
-        margin: 50px;
-
+        margin: 30px;
     }
     .bloc12activite{
         flex-direction: column;
@@ -835,7 +851,13 @@ margin-right: 25px;
         margin: 0;
         padding: 0;
     }
-    .bordercardpopu,
+    .bordercardpopu{
+        width: 100%;
+        height: 230px;
+        margin: 0;
+        margin-bottom: 40px;
+        border-radius: 40px;
+    }
     .bordercard,
     .bordercardactivite,
     .bordercardactivite2,
@@ -843,11 +865,11 @@ margin-right: 25px;
         width: 100%;
         height: 300px;
         margin: 0;
-        padding: 0;
         margin-bottom: 40px;
         border-radius: 40px;
     }
     .detailsactivite{
+        font-size: large;
         padding-left: 20px;
     }
     .bloc1marg,
@@ -863,10 +885,9 @@ margin-right: 25px;
     .imgactivite3 {
         height: 200px;
         width: 100%;
-        object-fit: cover;
-        background-position: top;
         border-radius: 40px 40px 0 0;
-        margin: 2px;
+        padding: 0;
+        margin-bottom: 20px;
     }
     .marginactivite1{
         margin-right: 0;
@@ -883,19 +904,3 @@ margin-right: 25px;
         height: auto;
         display: inline-block;
     }
-    .footmobile {
-        margin-left: 50px;
-        margin-top: 50px;
-    }
-}
-@media screen and (max-width: 700px){
-    .search{
-        width: 50%;
-        font-size: 50px;
-    }
-}
-@media screen and (max-width: 500px){
-    .logo{
-        padding-left: 41%;
-    }
-}

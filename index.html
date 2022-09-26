@@ -16,15 +16,16 @@
       <div class="head">
         <img src="images/logo/Booki@3x.png" class="logo" alt="Logo" />
         <div class="flexaround">
-          <div><a class="decoration bar" href="#HébergementàMarseille">Hébergement</a></div>
+          <div><a class="decoration bar" href="#HébergementàMarseille">hébergements</a></div>
           <div><a class="nodeco bar" href="#AcitivitésàMarseille">Activités</a></div>
         </div>
       </div>
     </header>
     <main id="main-content">
+      <section>
         <div class="titre">
           <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-          <div class="slogan"><p>En plein centre ville ou en pleine nature</p></div>
+          <p>En plein centre ville ou en pleine nature</p>
         </div>
         <!--zone de recherche-->
         <div class="recherche">
@@ -32,8 +33,10 @@
           <form method="post" action="traitement.php">
             <input type="search" placeholder="Marseille, France" />
           </form> 
-          <button>Rechercher</button>
-          <i class="fas fa-search"></i>
+          <button>
+            <span class="recherche-texte">Rechercher</span>
+            <i class=" loupe fas fa-search"></i>
+          </button>
         </div>
       </section>
       <section>
@@ -75,7 +78,7 @@
               <!--Ce div est va contenir les 3 premieres cartes qui  va nous permettre d'appliquer Flexbox-->
               <a class="bordercard nodecocard" href="#"><!--div qui contient la premiere carte-->
                 <div><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Cannebière" class="imgdimension" /></div>
-                <div class="des des1">
+                <div class="des">
                   <h4>Auberge La Cannebière</h4>
                   <p>nuit à partir de 25<strong>€</strong></p>
                   <p>
@@ -197,7 +200,7 @@
               </div>
             </a>
             <a class="bordercardpopu nodecocard" href="#">
-              <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Hôtel tout bleu et blanc" class="imgdimension1" />
+              <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Hôtel tout bleu et blanc" class="imgdimension1-1" />
               <div class="carddetailspopu">
                 <h4>Hôtel tout bleu et<br />blanc</h4>
                 <p>nuit à partir de 68<strong>€</strong></p>
@@ -254,7 +257,7 @@
     <footer>
       <div class="footback">
         <div class="foot">
-          <div class="footmobile">
+          <div>
             <h2>A propos</h2>
             <br />
             <ul>
@@ -263,7 +266,7 @@
               <li>Données et confidentialité</li>
             </ul>
           </div>
-          <div class="footmobile paddinfoot">
+          <div class="paddinfoot">
             <h2>Nos hébergements</h2>
             <br />
             <ul>
@@ -271,7 +274,7 @@
               <li>Soumettre votre hotêl</li>
             </ul>
           </div>
-          <div class="footmobile marginfoot2">
+          <div class="marginfoot2">
             <h2>Assisstance</h2>
             <br />
             <ul>
